@@ -16,8 +16,7 @@ Ton score est affiché à l'issue sur l'écran de résultats, avec un commentair
 
 Sur ce même écran, le bouton `"REJOUER"` permet de recommencer le quiz à volonté !
 
-
-## Rejoindre le projet 
+## Rejoindre le projet
 
 Dépôt distant GitHub : https://github.com/anyonym/adaquiz.git
 
@@ -26,6 +25,7 @@ Branche `main` : <b>version mise à jour et fonctionnelle uniquement</b>
 Branches `data`, `personnalisation`, `fix-responsive` : branches de développement / tests fonctionnalités
 
 ### Contenu du repository :
+
 ```
 .gitignore
 README.md
@@ -36,9 +36,11 @@ questions.json
 /images --- contient les illustrations
 /maquettes --- contient les wireframes
 ```
+
 ### Ajouter une question :
 
 1. Ouvrir le fichier `questions.json` dans un éditeur de code, copier le bloc suivant et le coller à la suite de la dernière question du fichier ; puis compléter les champs "..." correspondants :
+
 ```bash
 {
     "id": "...",
@@ -49,6 +51,7 @@ questions.json
     "image": "images/..."
 }
 ```
+
 <b>⚠️ ATTENTION</b> : penser à ajouter la <b>,</b> après l'accolade fermante <b>}</b> du bloc de la question précédente. -> <b>},</b>
 
 2. Ouvrir le fichier `index.html` ; dans la partie <b>ÉCRAN 1 — ACCUEIL</b> modifier le bloc <span id="nbQuestions"> "..." </span> en fonction du nombre total de questions ainsi que <p id="descriptionQuiz"> les "..." prochains checkpoints </p>
@@ -58,7 +61,6 @@ questions.json
 ### Reste à améliorer :
 
 Le nombre de questions qui s'incrémente directement grâce au `script.js` si le fichier `questions.json` est modifié.
-
 
 ## Ce qui est déjà fait
 
@@ -85,3 +87,9 @@ npx live-server
 Ouvrir ensuite `http://localhost:8080`.
 
 > ⚠️ Ne pas ouvrir `index.html` directement dans le navigateur — `fetch` ne fonctionne pas sans serveur local.
+
+## lien du projet
+
+# AdaQuiz
+
+🔗 [Voir le site en ligne](https://motoquiz-bouns.netlify.app)
